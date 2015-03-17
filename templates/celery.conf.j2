@@ -1,6 +1,6 @@
 description	"celery"
 
-start on (local-filesystems and net-device-up IFACE!=lo)
+start on ({{ celery_start_on }})
 stop on shutdown
 
 respawn
