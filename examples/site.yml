@@ -3,6 +3,7 @@
 
   vars:
     celery_dir: "/opt/app"
+    celery_start_on: "vagrant-mounted"
 
   pre_tasks:
     - name: Update APT cache

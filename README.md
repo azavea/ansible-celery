@@ -7,6 +7,7 @@ An Ansible role for installing [Celery](http://www.celeryproject.org/).
 - `celery_version` - Celery version
 - `celery_dir` - Directory for Celery worker to execute from (default: `/var/lib/celery`)
 - `celery_bin` - Path to Celery binary (default: `/usr/local/bin/celery`)
+- `celery_start_on` - Upstart `start on` stanza (default: `local-filesystems and net-device-up IFACE!=lo`)
 - `celery_app` - Celery application name (default: `proj`)
 - `celery_broker_url` - Celery broker URL (default: `redis://localhost:6379/0`)
 - `celery_log_level` - Celery worker log level (default: `info`)
