@@ -1,0 +1,4 @@
+.vagrant
+
+examples/roles/azavea.pip
+examples/roles/azavea.redis
