@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Hector Castro
+  description: An Ansible role for installing Celery.
+  company: Azavea Inc.
+  license: Apache
+  min_ansible_version: 1.8
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+  categories:
+  - system
+dependencies:
+  - { role: "azavea.pip" }

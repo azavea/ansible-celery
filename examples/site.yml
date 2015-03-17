@@ -1,0 +1,17 @@
+---
+- hosts: all
+
+  vars:
+    celery_dir: "/opt/app"
+
+  pre_tasks:
+    - name: Update APT cache
+      apt: update_cache=yes
+
+  tasks:
+    - name: Install demoapp requirements
+      pip: chdir="{{ celery_dir }}" requirements=requirements.txt
+
+  roles:
+    - { role: "azavea.redis" }
+    - { role: "azavea.celery" }

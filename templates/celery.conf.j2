@@ -1,0 +1,11 @@
+description	"celery"
+
+start on (local-filesystems and net-device-up IFACE!=lo)
+stop on shutdown
+
+respawn
+setuid celery
+chdir {{ celery_dir }}
+
+exec {{ celery_bin }} -A "{{ celery_app }}" -b "{{ celery_broker_url }}" \
+    worker -l {{ celery_log_level }} >> {{ celery_log }} 2>&1
