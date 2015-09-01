@@ -1,5 +1,5 @@
 ---
-celery_version: "3.1.17"
+celery_version: "3.1.18"
 celery_dir: "/var/lib/celery"
 celery_bin: "/usr/local/bin/celery"
 celery_start_on: "local-filesystems and net-device-up IFACE!=lo"
