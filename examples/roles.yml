@@ -1,0 +1,4 @@
+- name: azavea.pip
+  version: 0.1.0
+- name: azavea.redis
+  version: 0.1.0
