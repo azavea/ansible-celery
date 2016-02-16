@@ -1,3 +1,8 @@
+## 0.2.0
+
+- Add backward compatible support with Ansible 2.0.
+- Ensure that example uses YAML role specification format.
+
 ## 0.1.2
 
 - Bumps Celery to version `3.1.18`, which adds support for Django 1.8.
