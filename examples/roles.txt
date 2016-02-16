@@ -1,2 +1,0 @@
-azavea.pip,0.1.0
-azavea.redis,0.1.0
