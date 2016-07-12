@@ -5,6 +5,7 @@ An Ansible role for installing [Celery](http://www.celeryproject.org/).
 ## Role Variables
 
 - `celery_version` - Celery version
+- `celery_autoreload` - Flag to enable or disable auto-reloading (default: `False`)
 - `celery_dir` - Directory for Celery worker to execute from (default: `/var/lib/celery`)
 - `celery_bin` - Path to Celery binary (default: `/usr/local/bin/celery`)
 - `celery_start_on` - Upstart `start on` stanza (default: `local-filesystems and net-device-up IFACE!=lo`)
