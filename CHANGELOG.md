@@ -1,3 +1,7 @@
+## 0.3.0
+
+- Add support for auto-reloading Celery via `celery_autoreload` variable.
+
 ## 0.2.0
 
 - Add backward compatible support with Ansible 2.0.
