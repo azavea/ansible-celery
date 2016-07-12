@@ -6,6 +6,7 @@ celery_start_on: "local-filesystems and net-device-up IFACE!=lo"
 celery_app: "proj"
 celery_broker_url: "redis://localhost:6379/0"
 celery_log_level: "info"
+celery_autoreload: False
 
 celery_log: "/var/log/celery.log"
 celery_log_rotate_count: 5

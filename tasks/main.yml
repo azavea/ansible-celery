@@ -2,12 +2,12 @@
 - name: Create service account for Celery
   user: name=celery
         system=yes
-        home={{ celery_dir }}
+        home="{{ celery_dir }}"
         shell=/bin/false
         state=present
 
 - name: Install Celery
-  pip: name="celery[redis]" version={{ celery_version }} state=present
+  pip: name="celery[redis]" version="{{ celery_version }}" state=present
 
 - name: Configure Celery service definition
   template: src=celery.conf.j2 dest=/etc/init/celery.conf
@@ -18,7 +18,7 @@
   copy: content="" dest="{{ celery_log }}" force=no
 
 - name: Set log file permissions
-  file: path={{ celery_log }} owner=celery group=celery mode=0644
+  file: path="{{ celery_log }}" owner=celery group=celery mode=0644
 
 - name: Configure Celery log rotation
   template: src=logrotate_celery.j2 dest=/etc/logrotate.d/celery
